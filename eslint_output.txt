@@ -1,0 +1,44 @@
+
+C:\Users\HP\Desktop\Jatin-Portfolio\zenitsu-portfolio\src\app\projects\Projects.jsx
+  127:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\HP\Desktop\Jatin-Portfolio\zenitsu-portfolio\src\components\hero\Hero.jsx
+  76:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\HP\Desktop\Jatin-Portfolio\zenitsu-portfolio\src\components\loader\Loader.jsx
+  48:26  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  46 |               className="absolute w-[3px] h-[3px] rounded-full bg-yellow-400/70"
+  47 |               style={{
+> 48 |                 left: `${Math.random() * 100}%`,
+     |                          ^^^^^^^^^^^^^ Cannot call impure function
+  49 |                 top: `${Math.random() * 100}%`,
+  50 |               }}
+  51 |               animate={{  react-hooks/purity
+  49:25  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  47 |               style={{
+  48 |                 left: `${Math.random() * 100}%`,
+> 49 |                 top: `${Math.random() * 100}%`,
+     |                         ^^^^^^^^^^^^^ Cannot call impure function
+  50 |               }}
+  51 |               animate={{
+  52 |                 y: [-20, 20],                                                      react-hooks/purity
+  56:31  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  54 |               }}
+  55 |               transition={{
+> 56 |                 duration: 2 + Math.random() * 2,
+     |                               ^^^^^^^^^^^^^ Cannot call impure function
+  57 |                 repeat: Infinity,
+  58 |                 ease: "easeInOut",
+  59 |               }}                                                            react-hooks/purity
+
+✖ 5 problems (3 errors, 2 warnings)
+
