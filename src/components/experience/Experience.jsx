@@ -5,6 +5,15 @@ import { CheckCircle2 } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
 
 const timeline = [
+{
+    year: "2026",
+    title: "4th Position – Agentic Premier League by GDG Lucknow",
+    points: [
+      "Secured 4th place out of numerous competitive teams in an AI-agent-focused nationwide hackathon",
+      "Developed 'AwadhLease', an autonomous property management platform featuring end-to-end tenant onboarding",
+      "Engineered smart AI workflows for automated PG maintenance tracking, issue categorization, and landlord-tenant portals",
+    ],
+  },
   {
     year: "2026",
     title: "HackIndia Spark 6 – NIT Delhi",
